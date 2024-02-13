@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class OptiPrimeNum {
 
     public static boolean isPrime(int a) {
