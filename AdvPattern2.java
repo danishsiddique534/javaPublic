@@ -44,9 +44,22 @@ public class AdvPattern2 {
         }
     }
 
+
+    public static void Floyid_tringle(int b){
+        int counter =1 ;
+        for (int i = 1; i <=b; i++) {
+            for (int j = 1; j <=i; j++) {
+                System.out.print(counter+" ");
+                counter++;
+            }
+            System.err.println();
+        }
+    }
+
     public static void main(String[] args) {
         //half_priamid(5);
-        invertPrimidPttrnNumb(5);
+        //invertPrimidPttrnNumb(85);
+        Floyid_tringle(5);
        // hollow_pattern(4, 4);
     }
 }
