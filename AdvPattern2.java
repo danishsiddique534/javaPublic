@@ -25,7 +25,6 @@ public class AdvPattern2 {
                 System.out.print(" ");
             }
 
-
             for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
@@ -33,10 +32,9 @@ public class AdvPattern2 {
         }
     }
 
-
-    public static void invertPrimidPttrnNumb(int a){
-        for (int i = 1 ; i <=a; i++) {
-            for (int j = 1; j <=a-i+1; j++) {
+    public static void invertPrimidPttrnNumb(int a) {
+        for (int i = 1; i <= a; i++) {
+            for (int j = 1; j <= a - i + 1; j++) {
                 System.out.print(j);
 
             }
@@ -44,22 +42,35 @@ public class AdvPattern2 {
         }
     }
 
-
-    public static void Floyid_tringle(int b){
-        int counter =1 ;
-        for (int i = 1; i <=b; i++) {
-            for (int j = 1; j <=i; j++) {
-                System.out.print(counter+" ");
+    public static void Floyid_tringle(int b) {
+        int counter = 1;
+        for (int i = 1; i <= b; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(counter + " ");
                 counter++;
             }
             System.err.println();
         }
     }
 
+    public static void zero_one_tringle(int d) {
+        for (int i = 1; i <= d; i++) {
+            for (int j = 1; j <= i; j++) {
+                if ((i + j) % 2 == 0) {
+                    System.out.print("1");
+                } else {
+                    System.out.print("0");
+                }
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
-        //half_priamid(5);
-        //invertPrimidPttrnNumb(85);
-        Floyid_tringle(5);
-       // hollow_pattern(4, 4);
+        // half_priamid(5);
+        // invertPrimidPttrnNumb(85);
+        // Floyid_tringle(5);
+        // hollow_pattern(4, 4);
+        zero_one_tringle(5);
     }
 }
