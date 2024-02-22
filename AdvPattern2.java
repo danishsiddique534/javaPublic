@@ -132,6 +132,34 @@ public class AdvPattern2 {
             }
             System.out.println();
         }
+
+    }
+
+    public static void diamond_pattern(int n) {
+        // upper half of the diamond pattern 
+        for (int i = 1; i <= n; i++) {
+            // for space
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            // for star
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        // lower half of the diamond pattern 
+        for (int i = n - 1; i >= 1; i--) {
+            // for space
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            // for star
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
     public static void main(String[] args) {
         // half_priamid(5);
@@ -140,7 +168,8 @@ public class AdvPattern2 {
         // hollow_pattern(4, 4);
         // zero_one_tringle(5);
         //solid_Rhombus(5);
-        hollow_Rhombus(5);
+        //hollow_Rhombus(5);
         //butterfly(3);
+        diamond_pattern(5);
     }
 }
