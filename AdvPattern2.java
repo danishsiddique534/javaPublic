@@ -116,14 +116,31 @@ public class AdvPattern2 {
             System.out.println();
         }
     }
-
+    public static void hollow_Rhombus(int n) {
+        for (int i = 1; i <= n; i++) {
+            // for space
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            // for star
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == n || j == 1 || j == n) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         // half_priamid(5);
         // invertPrimidPttrnNumb(85);
         // Floyid_tringle(5);
         // hollow_pattern(4, 4);
         // zero_one_tringle(5);
-        solid_Rhombus(5);
+        //solid_Rhombus(5);
+        hollow_Rhombus(5);
         //butterfly(3);
     }
 }
